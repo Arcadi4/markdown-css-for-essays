@@ -8,6 +8,25 @@ body {
         max-width: 768px;
         margin: 0 auto;
     }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+}
+
+@media print {
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    a::after {
+        content: " ("attr(href) ")";
+        font-size: smaller;
+        color: #555;
+    }
 }
 
 p {

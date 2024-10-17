@@ -50,6 +50,23 @@ body {
         color: gray;
         font: "Arial", sans-serif;
     }
+
+    input[type="checkbox"] {
+        width: 14pt;
+        height: 14pt;
+        border: 1px solid black;
+        appearance: none;
+        margin-right: 10pt;
+    }
+
+    input[type="checkbox"]:checked::before {
+        content: '🗸';
+        font-size: 24pt;
+        line-height: 0;
+        position: relative;
+        left: -2pt;
+        bottom: -1pt;
+    }
 }
 
 p {
@@ -57,7 +74,14 @@ p {
     margin: 0 0 1em;
 }
 
-li {
+ul,
+ol {
+    padding-left: 24pt;
+}
+
+li,
+ul,
+ol {
     break-inside: avoid;
 }
 

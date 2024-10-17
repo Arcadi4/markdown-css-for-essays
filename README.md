@@ -4,7 +4,7 @@ Simple SCSS can be used to style your Markdown files for essay writing.
 
 ## Setup
 
-First clone the repository:
+First, clone the repository:
 
 ```bash
 git clone https://github.com/Arcadi4/markdown-css-for-essay-writing
@@ -37,17 +37,14 @@ Add the following line to your Markdown file:
 <link rel="stylesheet" href="path/to/main.css" />
 ```
 
-You might need to break lines manually for code blocks, keep at most around `50` characters in a line.
-
-```html
+You might need to break lines manually for code blocks, keeping at most around `50` characters in a line.
 
 ## Code Block Highlighting
 
-You can consider using this with [highlight.js](https://highlightjs.org/). Add the following code to your Markdown file.
+Consider using this with [highlight.js](https://highlightjs.org/). Add the following code to your Markdown file.
 
 ```html
 <!-- highlight.js -->
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js

@@ -129,6 +129,12 @@ code {
     line-height: normal;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: calc(100% - 36pt);
+}
+
 p code,
 li code {
     font-size: 10pt;

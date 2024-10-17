@@ -2,6 +2,10 @@
 
 Simple SCSS can be used to style your Markdown files for essay writing.
 
+![sample-1](sample-1.png)
+
+![sample-2](sample-2.png)
+
 ## Setup
 
 First, clone the repository:
@@ -26,10 +30,12 @@ yarn global add sass
 Then run the following command to compile the SCSS file to CSS:
 
 ```bash
-sass --watch main.scss:main.css --style compressed --watch main.scss:main.min.css
+sass main.scss:main.css --style compressed main.scss:main.min.css
 ```
 
 ## Use in Markdown Files
+
+You'll need tools that convert Markdown into HTML, `pandoc` or a few VSC extensions would work well.
 
 Add the following line to your Markdown file:
 

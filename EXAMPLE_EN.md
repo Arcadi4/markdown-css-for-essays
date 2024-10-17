@@ -23,12 +23,12 @@ Dolor quis incididunt enim anim elit aliquip duis nulla sint in nulla esse ex. O
 
 Culpa nisi duis velit sit magna magna in irure.
 
-- Adipisicing anim eiusmod eu minim aute ex est officia nisi culpa quis esse ea proident.
-- Voluptate aliqua aliqua id voluptate proident reprehenderit consequat in sint commodo Lorem dolor.
-  - Veniam ex reprehenderit veniam.
-  - Sunt Lorem irure esse mollit.
-- In dolore anim aute eu deserunt pariatur ad culpa adipisicing incididunt amet sint adipisicing ea.
-- Officia non exercitation do exercitation magna et cillum tempor laborum duis laborum est veniam aliqua eiusmod.
+-   Adipisicing anim eiusmod eu minim aute ex est officia nisi culpa quis esse ea proident.
+-   Voluptate aliqua aliqua id voluptate proident reprehenderit consequat in sint commodo Lorem dolor.
+    -   Veniam ex reprehenderit veniam.
+    -   Sunt Lorem irure esse mollit.
+-   In dolore anim aute eu deserunt pariatur ad culpa adipisicing incididunt amet sint adipisicing ea.
+-   Officia non exercitation do exercitation magna et cillum tempor laborum duis laborum est veniam aliqua eiusmod.
 
 Irure id eiusmod laboris mollit ad sunt pariatur nulla. Id nulla ea velit.
 
@@ -39,9 +39,9 @@ Irure id eiusmod laboris mollit ad sunt pariatur nulla. Id nulla ea velit.
 
 Reprehenderit nulla labore sit ipsum ex minim minim cillum elit non ipsum ad in in culpa. Nisi quis ea pariatur Lorem consectetur laborum aliquip ea mollit aute.
 
-- [ ] Nulla deserunt esse quis aute magna ea pariatur enim sunt aliquip sit irure.
-- [x] Sunt commodo laborum anim id reprehenderit adipisicing.
-- [ ] Incididunt ex laborum in id officia consequat nisi.
+-   [ ] Nulla deserunt esse quis aute magna ea pariatur enim sunt aliquip sit irure.
+-   [x] Sunt commodo laborum anim id reprehenderit adipisicing.
+-   [ ] Incididunt ex laborum in id officia consequat nisi.
 
 ### Hyperlinks
 
@@ -83,7 +83,7 @@ $$
 WIP
 
 | Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
+| -------- | -------- | -------- |
 | Row 1    | Data 1   | Data 2   |
 | Row 2    | Data 3   | Data 4   |
 | Row 3    | Data 5   | Data 6   |

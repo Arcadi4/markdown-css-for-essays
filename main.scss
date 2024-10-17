@@ -124,15 +124,32 @@ h6 {
 
 code {
     font-family: "Fira Code", monospace;
-    font-size: 10pt;
+
+}
+
+pre {
     page-break-inside: avoid;
-    line-height: normal;
+    background-color: #F3F3F3;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 8pt;
+    line-height: 1.15em;
+    padding: 8pt;
+}
+
+pre::-webkit-scrollbar {
+    display: none;
+}
+
+pre {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 img {
     display: block;
     margin: 0 auto;
-    max-width: calc(100% - 36pt);
+    max-width: calc(100% - 14pt);
 }
 
 p code,

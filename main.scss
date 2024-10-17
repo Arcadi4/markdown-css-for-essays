@@ -1,0 +1,86 @@
+body {
+    font-family: "Crimson Text", serif;
+    line-height: 1.5;
+}
+
+@media screen {
+    body {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+p {
+    font-size: 12pt;
+    margin: 0 0 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1em 0 0.5em;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 32pt;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+h4 {
+    font-size: 16pt;
+}
+
+h5 {
+    font-size: 14pt;
+}
+
+h6 {
+    font-size: 12pt;
+}
+
+code {
+    font-family: "Fira Code", monospace;
+    font-size: 8pt;
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    page-break-inside: avoid;
+}
+
+p code {
+    font-size: 10pt;
+}
+
+li code {
+    font-size: 10pt;
+}
+
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+@page :first {
+    /* Add title css here */
+}
+
+title {
+    page-break-after: avoid;
+    font-size: 36pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}

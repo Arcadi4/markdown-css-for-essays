@@ -34,7 +34,7 @@ sass --watch main.scss:main.css --style compressed --watch main.scss:main.min.cs
 Add the following line to your Markdown file:
 
 ```html
-<link rel="stylesheet" href="path/to/main.css">
+<link rel="stylesheet" href="path/to/main.css" />
 ```
 
 ## Code Block Highlighting

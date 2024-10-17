@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap");
 
 body {
     font-family: "Crimson Text", "Noto Serif SC", serif;
@@ -21,14 +21,15 @@ body {
 
 @media print {
     a {
-        color: #000;
+        color: black;
         text-decoration: none;
     }
 
     a::after {
         content: " ("attr(href) ")";
         font-size: smaller;
-        color: #555;
+        color: gray;
+        font: "Arial", sans-serif;
     }
 }
 

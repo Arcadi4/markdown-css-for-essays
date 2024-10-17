@@ -3,20 +3,39 @@
 
 body {
     font-family: "Crimson Text", "Noto Serif SC", serif;
-    line-height: 1.5;
+    line-height: 1.5em;
+    box-sizing: border-box;
+}
+
+@page {
+    size: A4;
+    margin: 20mm;
 }
 
 @media screen {
     body {
-        max-width: 768px;
         margin: 0 auto;
+        width: calc(100% - 60px);
+        max-width: 768px;
+        padding: 0;
     }
 
     a {
         color: #007bff;
         text-decoration: none;
     }
+}
 
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.875rem;
+    }
 }
 
 @media print {
@@ -39,6 +58,9 @@ p {
 }
 
 li {
+    break-inside: avoid;
+}
+
 h1,
 h2,
 h3,
@@ -88,21 +110,4 @@ code {
 p code,
 li code {
     font-size: 10pt;
-}
-
-@page {
-    size: A4;
-    margin: 20mm;
-}
-
-@page :first {
-    /* Add title css here */
-}
-
-title {
-    page-break-after: avoid;
-    font-size: 36pt;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1em;
 }

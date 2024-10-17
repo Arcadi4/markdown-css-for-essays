@@ -1,9 +1,13 @@
 {
     "dependencies": {},
     "name": "markdown-css-for-essay-writing",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "main": "index.js",
     "repository": "git@github.com:Arcadi4/markdown-css-for-essay-writing.git",
     "author": "4rcadia <97033226+Arcadi4@users.noreply.github.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "devDependencies": {
+        "prettier": "^3.3.3",
+        "sass": "^1.80.1"
+    }
 }

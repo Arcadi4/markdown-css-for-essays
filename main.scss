@@ -47,7 +47,7 @@ body {
     }
 
     a::after {
-        content: " (" attr(href) ")";
+        content: " ("attr(href) ")";
         font-size: smaller;
         color: gray;
         font: "Arial", sans-serif;
@@ -96,6 +96,14 @@ h6 {
     margin: 1em 0 0.5em;
     font-weight: bold;
     line-height: 1em;
+}
+
+@media screen {
+    h1::before {
+        content: "";
+        display: block;
+        height: 96pt;
+    }
 }
 
 h1 {

@@ -74,7 +74,7 @@ h6 {
 
 h1 {
     font-size: 32pt;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid gray;
     padding-bottom: 0.5em;
 }
 
@@ -100,14 +100,15 @@ h6 {
 
 code {
     font-family: "Fira Code", monospace;
-    font-size: 8pt;
-    background-color: #f0f0f0;
-    padding: 2px 4px;
-    border-radius: 4px;
+    font-size: 10pt;
     page-break-inside: avoid;
+    line-height: normal;
 }
 
 p code,
 li code {
     font-size: 10pt;
+    background-color: lightgrey;
+    padding: 2px 4px;
+    border-radius: 4px;
 }

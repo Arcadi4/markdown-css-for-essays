@@ -37,6 +37,10 @@ Add the following line to your Markdown file:
 <link rel="stylesheet" href="path/to/main.css" />
 ```
 
+You might need to break lines manually for code blocks, keep at most around `50` characters in a line.
+
+```html
+
 ## Code Block Highlighting
 
 You can consider using this with [highlight.js](https://highlightjs.org/). Add the following code to your Markdown file.

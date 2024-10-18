@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap");
-
-// TODO: Orphan and widow control
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
 
 body {
     font-family: "Crimson Text", "Noto Serif SC", serif;
@@ -41,11 +40,18 @@ body {
         text-decoration: none;
     }
 
-    a:not(.footnote-ref *)::after {
-        content: " ("attr(href) ")";
+    a:not(.footnote-ref)::after {
+        content: "("attr(href) ")";
+        display: inline-block;
+        max-width: 50ch;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: smaller;
         color: gray;
-        font: "Arial", sans-serif;
+        font-family: "Arial", sans-serif;
+        vertical-align: bottom;
+        margin-left: 1ch;
     }
 
     .footnote-backref {
@@ -70,17 +76,19 @@ body {
     }
 
     pre {
-        background-color: gainsboro !important;
+        background-color: #f0f0f0 !important;
     }
 
     code {
-        background-color: gainsboro !important;
+        background-color: #f0f0f0 !important;
     }
 }
 
 p {
     font-size: 12pt;
     margin: 0 0 1em;
+    orphans: 3;
+    widows: 3;
 }
 
 ul,
@@ -94,6 +102,10 @@ ol {
     break-inside: avoid;
 }
 
+hr {
+    color: gray;
+}
+
 h1,
 h2,
 h3,
@@ -103,6 +115,7 @@ h6 {
     margin: 1em 0 0.5em;
     font-weight: bold;
     line-height: 1em;
+    page-break-after: avoid;
 }
 
 @media screen {
@@ -140,7 +153,7 @@ h6 {
 }
 
 code {
-    font-family: "Fira Code", monospace;
+    font-family: "JetBrains Mono", monospace;
 }
 
 pre {

@@ -20,6 +20,8 @@ body {
         width: calc(100% - 60px);
         max-width: 768px;
         padding: 0;
+        color: #333;
+        background-color: floralwhite;
     }
 
     a {
@@ -28,29 +30,26 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    body {
-        font-size: 0.875rem;
-    }
-}
-
 @media print {
+    body {
+        background-color: none;
+        color: black;
+    }
+
     a {
         color: black;
         text-decoration: none;
     }
 
-    a::after {
+    a:not(.footnote-ref *)::after {
         content: " ("attr(href) ")";
         font-size: smaller;
         color: gray;
         font: "Arial", sans-serif;
+    }
+
+    .footnote-backref {
+        display: none;
     }
 
     input[type="checkbox"] {
@@ -68,6 +67,14 @@ body {
         position: relative;
         left: -2pt;
         bottom: -1pt;
+    }
+
+    pre {
+        background-color: gainsboro !important;
+    }
+
+    code {
+        background-color: gainsboro !important;
     }
 }
 
@@ -138,12 +145,12 @@ code {
 
 pre {
     page-break-inside: avoid;
-    background-color: #f3f3f3;
+    background-color: antiquewhite;
     border-radius: 6px;
     overflow-x: auto;
     font-size: 8pt;
-    line-height: 1.15em;
-    padding: 8pt;
+    line-height: 1.33em;
+    padding: 16pt;
 }
 
 pre::-webkit-scrollbar {
@@ -158,13 +165,19 @@ pre {
 img {
     display: block;
     margin: 0 auto;
-    max-width: calc(100% - 14pt);
+    max-width: calc(100% - 7pt);
 }
 
 p code,
 li code {
-    font-size: 10pt;
-    background-color: lightgrey;
-    padding: 2px 4px;
+    font-size: 9pt;
+    background-color: antiquewhite;
+    color: black;
+    padding: 1px 2px;
     border-radius: 4px;
+}
+
+.hljs {
+    padding: 0 !important;
+    background: none !important;
 }

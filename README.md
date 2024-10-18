@@ -2,10 +2,6 @@
 
 CSS for your markdown essays. Enhancing HTML reading experience and exporting printable PDFs.
 
-![sample-1](sample-1.png)
-
-![sample-2](sample-2.png)
-
 ## Use in Markdown Files
 
 You'll need tools that convert Markdown into HTML, `pandoc` or a few VSC extensions would work well.
@@ -33,6 +29,20 @@ Add the following code to your Markdown file, or choose a CDN you prefer on [the
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js
 <script>hljs.highlightAll();</script>
 ```
+
+## Images
+
+### HTML pages
+
+![HTML1](image/html-1.jpeg)
+
+![HTML2](image/html-2.jpeg)
+
+### Exported PDFs
+
+![PDF1](image/pdf-1.jpeg)
+
+![PDF2](image/pdf-2.jpeg)
 
 ## Compile
 

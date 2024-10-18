@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap");
 
 body {
     font-family: "Crimson Text", "Noto Serif SC", serif;
@@ -41,7 +41,7 @@ body {
     }
 
     a:not(.footnote-ref)::after {
-        content: "("attr(href) ")";
+        content: "(" attr(href) ")";
         display: inline-block;
         max-width: 50ch;
         white-space: nowrap;

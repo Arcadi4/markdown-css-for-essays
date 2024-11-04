@@ -41,7 +41,7 @@ body {
     }
 
     a:not(.footnote-ref)::after {
-        content: "(" attr(href) ")";
+        content: "("attr(href) ")";
         display: inline-block;
         max-width: 50ch;
         white-space: nowrap;
@@ -81,6 +81,14 @@ body {
 
     code {
         background-color: #f0f0f0 !important;
+    }
+
+    .mermaid {
+        min-height: 200px;
+    }
+
+    .mermaid svg {
+        max-height: 90vh;
     }
 }
 
@@ -193,4 +201,16 @@ li code {
 .hljs {
     padding: 0 !important;
     background: none !important;
+}
+
+.mermaid {
+    page-break-inside: avoid;
+    display: flex;
+    justify-content: center;
+}
+
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
